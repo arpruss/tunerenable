@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="fill_vertical"
+    android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/launch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickedLaunch"
+            android:text="Launch UI Tuner" />
+
+    <Button
+            android:id="@+id/on"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickedOn"
+            android:text="Enable UI Tuner [root]" />
+
+    <Button
+            android:id="@+id/off"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="clickedOff"
+            android:text="Disable UI Tuner [root]" />
+    
+    <TextView android:id="@+id/adb"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="This is experimental software. On my device, the tuner crashes when you attempt to add quick settings tiles, but you can subtract and reset without problems.\nCredits: Icon based on Tuning Fork by Christopher T. Howlett from the Noun Project, CC-by-3.0"/>
+
+</LinearLayout>

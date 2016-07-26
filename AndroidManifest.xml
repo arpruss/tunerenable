@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="0.01" package="mobi.pruss.tuner">
+
+
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
+    <application android:label="UI Tuner Enable" android:icon="@drawable/icon"
+    >
+        <activity android:name=".TunerActivity"
+                  android:launchMode="singleTask"
+                  android:icon="@drawable/icon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
