@@ -89,6 +89,10 @@ public class TunerActivity extends Activity {
 		new TweakTask(this).execute("pm disable com.android.systemui/.tuner.TunerActivity",  "^Component.*", "^Error.*");
 	}
 
+	public void otherApps(View v) {
+		MarketDetector.launch(this, true);
+	}
+
 	public void clickedLaunch(View v) {
 		Intent i = new Intent(Intent.ACTION_MAIN);
 		i.setComponent(component);

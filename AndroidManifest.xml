@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      android:versionCode="1"
-      android:versionName="0.01" package="mobi.pruss.tuner">
+      android:versionCode="2"
+      android:versionName="0.02" package="mobi.pruss.tuner">
 
 
     <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
