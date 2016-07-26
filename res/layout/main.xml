@@ -12,7 +12,13 @@
             android:layout_height="wrap_content"
             android:onClick="clickedLaunch"
             android:text="Launch UI Tuner" />
-
+        <Button
+            android:id="@+id/add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addSetting"
+            android:text="Add Quick Setting tile" />
+        
     <Button
             android:id="@+id/on"
             android:layout_width="fill_parent"

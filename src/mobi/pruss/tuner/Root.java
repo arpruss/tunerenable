@@ -93,6 +93,7 @@ public class Root {
 	
 	public boolean execOne(String s, String successMarker, String failureMarker) {
 		try {
+			Log.v("tuner", s);
 			DataInputStream rootOutput = new DataInputStream(rootShell.getInputStream());
 			BufferedReader br = new BufferedReader(new InputStreamReader(rootOutput));
 			rootCommands.writeBytes(s + "; exit\n");
@@ -103,6 +104,7 @@ public class Root {
 			}
 			String line;
 			while((line=br.readLine())!=null) {
+				Log.v("tuner", ">"+line);
 				if (line.trim().matches(successMarker)) {
 					br.close();
 					return true;
@@ -162,6 +164,7 @@ public class Root {
 	}
 	
 	public void exec( String s ) {
+		Log.v("tuner", "Executing: "+s);
 		try {
 			rootCommands.writeBytes(s + "\n");
 			rootCommands.flush();
