@@ -41,7 +41,7 @@ public class TunerActivity extends Activity {
 	static final String INTENT_PREFIX = "intent(";
 	static final String TILE_SETTING = "sysui_qs_tiles";
 	static final String defaults = "wifi,bt,dnd,rotation,airplane,saver,fingerprint,extsaver,cell,inversion,location,hotspot,flashlight,vowifi,"+INTENT_PREFIX;
-	static final String descriptions = "WiFi,Bluetooth,Do not disturb,Rotation,Airplane mode,Power Saver,Fingerprint,Extreme Saver,Cell Data,Invert Screen,Location,Hotspot,Flashlight,Voice over WiFi,Broadcast Intent";
+	static final String descriptions = "WiFi,Bluetooth,Do not disturb,Rotation,Airplane mode,Power Saver,Fingerprint,Extreme Saver,Cell Data,Invert Screen,Location,Hotspot,Flashlight,Voice over WiFi,Broadcast Tile";
 	
 	private void addRawQSTile(String currentTileSetting, String string) {
 		if (currentTileSetting.length() > 0)
@@ -178,7 +178,7 @@ public class TunerActivity extends Activity {
 	}
 
 	public void otherApps(View v) {
-		MarketDetector.launch(this, true);
+		MarketDetector.selectApp(this);
 	}
 
 	public void clickedLaunch(View v) {

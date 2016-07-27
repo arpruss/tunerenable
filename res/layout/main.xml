@@ -17,7 +17,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:onClick="addSetting"
-            android:text="Add Quick Setting tile" />
+            android:text="Add Quick Setting tile [root]" />
         
     <Button
             android:id="@+id/on"
@@ -36,13 +36,13 @@
     <TextView android:id="@+id/adb"
         	android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
-        	android:text="This is experimental software. On my device, the tuner crashes when you attempt to add quick settings tiles, but you can subtract and reset without problems.\nCredits: Icon based on Tuning Fork by Christopher T. Howlett from the Noun Project, CC-by-3.0"/>
+        	android:text="This is experimental software. On my device, the official tuner crashes when you attempt to add quick settings tiles, but you can use the above 'Add quick setting tile' button instead.\nCredits: Icon based on Tuning Fork by Christopher T. Howlett from the Noun Project, CC-by-3.0"/>
 
     <Button
             android:id="@+id/others"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:onClick="otherApps"
-            android:text="See developer's other apps" />
+            android:text="See some other apps from developer" />
     
 </LinearLayout>
